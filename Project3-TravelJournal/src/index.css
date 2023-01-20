@@ -42,13 +42,21 @@ nav{
   margin: 35px auto 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid black;
+  height: 100%;
 }
 
+.container:last-child{
+  border-bottom: none;
+}
+
+
+
 img{
-  width: 125px;
-  height: 200px;
+  max-width: 90%;
+   max-height: 100%;
   border-radius: 5px;
   margin-right: 19px;
+  align-self: left;
 }
 
 .location{
@@ -57,6 +65,11 @@ img{
     line-height: 12px;
     letter-spacing: 0.17em;
     margin-right: 12px;
+    text-transform:uppercase;
+}
+
+.locIcon{
+  color: #F55A5A;
 }
 
 .inline{
