@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+/* background: url(/background-chevron.jpg); */
+}
+
+
+main{
+    background-color: #F5F5F5;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.container{
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+   gap: 20px;
+}
+
