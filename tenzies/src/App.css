@@ -7,7 +7,8 @@ body{
     margin: 0;
     background-color: #0B2434;
     padding: 20px;
-/* background: url(/background-chevron.jpg); */
+    font-family: "Karla", sans-serif;
+
 }
 
 
@@ -17,8 +18,9 @@ main{
     max-width: 800px;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
     align-items: center;
 }
@@ -30,3 +32,23 @@ main{
    gap: 20px;
 }
 
+
+.roll-dice{
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
