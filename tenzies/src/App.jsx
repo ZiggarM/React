@@ -1,7 +1,7 @@
 import React from "react";
 import Die from "./Die";
 import {nanoid} from "nanoid"
-
+import Confetti from 'react-confetti'
 import "./App.css"
 
 export default function App(){
@@ -14,7 +14,7 @@ export default function App(){
         const allHeld = dice.every(die => die.isHeld)
         const firstValue = dice[0].value
         const allSameValue = dice.every(die => die.value === firstValue)
-        allHeld && allSameValue && setTenzies(true)
+        allHeld && allSameValue ? setTenzies(true) : setTenzies(false)
     }, [dice])
 
 
@@ -59,6 +59,9 @@ function rollDice(){
         })
     })
 }
+function newGame(){
+   return setDice(allNewDice)
+}
 
     return (
         <main >
@@ -70,8 +73,9 @@ function rollDice(){
             <div className="container">
             {diceElements}
             </div>
+            {tenzies && <Confetti />}
             {tenzies ?
-            <button className="roll-dice" onClick={rollDice}>Reset Game</button> :
+            <button className="roll-dice" onClick={newGame}>New Game</button> :
              <button className="roll-dice" onClick={rollDice}>Roll</button>}
         </main> 
     )
