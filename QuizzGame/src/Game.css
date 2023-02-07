@@ -1,0 +1,41 @@
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 80%;
+}
+
+.game-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.qBody:first-child {
+    border-top:none
+}
+.qBody {
+    border-bottom: 1px solid gray;
+}
+
+section div p{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 15px;
+    cursor: pointer;
+    color: #293264;
+}
+
+.game-btn{
+    margin-top: 20px;
+}
+
+h2{
+    margin-top: 10px;
+    color: #293264;
+}
